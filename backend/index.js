@@ -22,6 +22,7 @@ const corsOptions = {
 }
 
 app.use(cors(corsOptions));
+app.use(cookieParser());
 
 const PORT = process.env.PORT || 3000;
 
